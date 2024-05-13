@@ -19,11 +19,11 @@ function MyApp({ Component, pageProps }) {
   return (
     <VideoState>
       <Head>
-        <title>OLMO - Software, App, SaaS & Startup Landing Pages Pack </title>
+        <title>Ethhar</title>
         <link
           rel="shortcut icon"
           type="image/x-icon"
-          href="/demo/images/icons/favicon.ico"
+          href="images/ethhar_favicon.png"
         />
       </Head>
       {preloader && <PreLoader />}

@@ -31,9 +31,9 @@ const Header = ({
     >
       <div className="header-wrapper">
         {/* MOBILE HEADER */}
-        <div className="wsmobileheader clearfix">
+        <div className="wsmobileheader clearfix" style={{ backgroundColor: "transparent" }}>
           <span className="smllogo">
-            <img src="/images/logo-01.png" alt="mobile-logo" />
+            <img src="/supa/logo_nav.png" alt="mobile-logo" />
           </span>
           <a
             id="wsnavtoggle"
@@ -108,19 +108,6 @@ const Header = ({
                     Contacto
                   </a>
                 </li>
-                {/* <li className="nl-simple">
-                  <Link
-                    href={`${singlePage ? "/pricing" : "#content-4"}`}
-                    className={`btn ${
-                      btnCustomHover
-                        ? btnCustomHover
-                        : "btn-tra-white orange-red-hover"
-                    } last-link`}
-                    style={{ border: "1px solid #fff !important" }}
-                  >
-                    Contacto
-                  </Link>
-                </li> */}
               </ul>
             </nav>
           </div>
