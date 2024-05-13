@@ -11,6 +11,7 @@ import CustomersReviews_2 from "@/src/components/CustomersReviews_2";
 import Price from "@/src/components/Price";
 import ContactForm from "@/src/components/ContactForm";
 import { useState } from "react";
+import "../styles/globals.css";
 
 const Index = () => {
   const [reproducirVideo, setReproducirVideo] = useState(false);
