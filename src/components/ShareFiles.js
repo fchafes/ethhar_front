@@ -3,7 +3,12 @@ const ShareFiles = ({ flexible }) => {
     <section
       id="content-2"
       className="content-2 wide-60 content-section division"
-      style={{ overflow: "visible", position: "relative" }}
+      style={{
+        overflow: "visible",
+        position: "relative",
+        paddingBottom: "0",
+        paddingTop: "130px",
+      }}
     >
       <div className="gradiente-2"></div>
       <div className="container">
@@ -15,33 +20,40 @@ const ShareFiles = ({ flexible }) => {
                 className="img-fluid"
                 src="/images/share_prueba.webp"
                 alt="content-image"
+                style={{
+                  height: "400px",
+                  width: "100%",
+                  objectFit: "cover",
+                  borderRadius: "20px",
+                }}
               />
             </div>
           </div>
           {/* TEXT BLOCK */}
           <div className="col-md-7 col-lg-6">
             <div className="txt-block right-column wow fadeInLeft">
-              {flexible && (
-                <span className="section-id rounded-id bg-tra-purple purple-color txt-upcase">
-                  Extremely Flexible
-                </span>
-              )}
               {/* Title */}
-              <h2 className="h2-xs" style={{ fontSize: "2.8rem" }}>
+              <h2 className="h2-xs" style={{ fontSize: "2.2rem" }}>
                 {" "}
                 Porque siempre hay una canción detrás de cada recuerdo.
               </h2>
               {/* Text */}
-              <p className="p-lg">
-                Reconstruimos recuerdos autobiográficos a través de la <strong>escucha
-                de música personalizada</strong>, logrando mejoras en aspectos de
-                <strong>memoria, cognitivos, emocionales y conductuales</strong>.
+              <p className="p-sx">
+                Reconstruimos recuerdos autobiográficos a través de la{" "}
+                <strong>escucha de música personalizada</strong>, logrando
+                mejoras en aspectos de
+                <strong>memoria, cognitivos, emocionales y conductuales</strong>
+                .
               </p>
               {/* Text */}
-              <p className="p-lg">
-                Una solución alternativa, <strong>no invasiva, no farmacológica</strong> y
-                personalizada, enfocada en apoyar y potenciar las actividades
-                cotidianas, <strong>facilitando las tareas de familiares y cuidadores</strong>.
+              <p className="p-sx">
+                Una solución alternativa,{" "}
+                <strong>no invasiva, no farmacológica</strong> y personalizada,
+                enfocada en apoyar y potenciar las actividades cotidianas,{" "}
+                <strong>
+                  facilitando las tareas de familiares y cuidadores
+                </strong>
+                .
               </p>
             </div>
           </div>

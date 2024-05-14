@@ -31,9 +31,12 @@ const Header = ({
     >
       <div className="header-wrapper">
         {/* MOBILE HEADER */}
-        <div className="wsmobileheader clearfix" style={{ backgroundColor: "transparent" }}>
+        <div
+          className="wsmobileheader clearfix"
+          style={{ backgroundColor: "transparent" }}
+        >
           <span className="smllogo">
-            <img src="/supa/logo_nav.png" alt="mobile-logo" />
+            <img src="/supa/logo_iso.png" alt="mobile-logo" />
           </span>
           <a
             id="wsnavtoggle"
@@ -50,22 +53,27 @@ const Header = ({
             <div className="desktoplogo">
               <a href="#hero-1" className="logo-black">
                 <img
-                  src="/supa/logo_nav.png"
+                  src="/supa/logo_iso.png"
                   alt="header-logo"
-                  style={{ width: "145px" }}
+                  style={{ width: "190px" }}
                 />
               </a>
             </div>
             <div className="desktoplogo">
               <a href="#hero-1" className="logo-white">
                 <img
-                  src={`${
-                    whiteLogo ? "/supa/logo_nav.png" : "/supa/logo_nav.png"
-                  }`}
+                  src="/supa/logo_iso.png"
                   alt="header-logo"
-                  style={{ width: "145px" }}
+                  style={{ width: "190px" }}
                 />
               </a>
+            </div>
+            <div className="desktoplogo">
+              <img
+                src="/supa/logo_bajada.png"
+                alt="header-logo"
+                style={{ height: "35px", marginLeft: "10px" }}
+              />
             </div>
             {/* MAIN MENU */}
             <nav className="wsmenu clearfix">

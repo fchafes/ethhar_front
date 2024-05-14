@@ -39,12 +39,12 @@ const Demo1Hero1 = ({ onReproducirVideo }) => {
           {/* HERO IMAGE */}
           <div
             className="col-md-5 col-lg-6"
-            style={{ display: "flex", justifyContent: "flex-end" }}
+            style={{ display: "flex", justifyContent: "flex-end", marginLeft: "-50px" }}
           >
             <div className="hero-1-img wow fadeInLeft" style={{ width: "75%" }}>
               <img
                 className="img-fluid"
-                src="/images/features_img.webp"
+                src="/supa/header_pic.webp"
                 alt="hero-image"
               />
             </div>

@@ -79,23 +79,31 @@ const Price = ({ color }) => {
                   {/* Plan Title */}
                   <div className="pricing-plan-title">
                     <h5 className="h5-xs" style={{ color: "#1d293f" }}>
-                      Dórico
+                      Individual
                     </h5>
                     {/* <h6 className="h6-sm bg-lightgrey">Save 30%</h6> */}
                     <p className="p-md">Para uso personal</p>
                   </div>
                   {/* Price */}
                   <sup className="dark-color">$</sup>
-                  <span className="dark-color">25</span>
-                  <sup className="validity dark-color">/ USD por mes</sup>
+                  {plan === "a" ? (
+                    <span className="dark-color">975</span>
+                  ) : plan === "b" ? (
+                    <span className="dark-color">878</span>
+                  ) : plan === "c" ? (
+                    <span className="dark-color">790</span>
+                  ) : (
+                    <span className="dark-color">975</span>
+                  )}
+                  <sup className="validity dark-color">/ UYU por mes</sup>
                   {/* <p className="p-md">Billed as $96 per year</p> */}
                 </div>
                 {/* Plan Features  */}
                 <ul className="features">
                   <li>
                     <p className="p-md">
-                      <span className="flaticon-check" /> Playlist personalizada
-                      de 30 minutos cada 21 días
+                      <span className="flaticon-check" /> Acceso a Playlist
+                      personalizadas
                     </p>
                   </li>
                   <li>
@@ -127,32 +135,72 @@ const Price = ({ color }) => {
                   {/* Plan Title */}
                   <div className="pricing-plan-title">
                     <h5 className="h5-xs" style={{ color: "#1d293f" }}>
-                      Lidio
+                      Clínicas
                     </h5>
                     {/* <h6 className="h6-sm bg-lightgrey">Save 30%</h6> */}
-                    <p className="p-md">Para uso personal</p>
+                    <p className="p-md">Para uso en instituciones</p>
                   </div>
                   {/* Price */}
                   <sup className="dark-color">$</sup>
-                  <span className="dark-color">150</span>
-                  <sup className="validity dark-color">/ USD por mes</sup>
+                  {plan === "a" ? (
+                    <span className="dark-color">790</span>
+                  ) : plan === "b" ? (
+                    <span className="dark-color">790</span>
+                  ) : plan === "c" ? (
+                    <span className="dark-color">750</span>
+                  ) : (
+                    <span className="dark-color">790</span>
+                  )}
+                  <sup className="validity dark-color">
+                    / UYU por mes por usuario
+                  </sup>
                   {/* <p className="p-md">Billed as $96 per year</p> */}
                 </div>
                 {/* Plan Features  */}
                 <ul className="features">
                   <li>
-                    <p className="p-md">Lo desglosado en Dórico más:</p>
-                  </li>
-                  <li>
-                    <p className="p-md">
-                      <span className="flaticon-check" /> Playlist personalizada
-                      de 30 minutos cada 21 días
+                    <p className="p-sx" style={{ fontSize: "15px" }}>
+                      Los items de plan Individual más:
                     </p>
                   </li>
                   <li>
-                    <p className="p-md">
-                      <span className="flaticon-check" /> Opciones para:
-                      Ansiedad, reminiscencia y depresión
+                    <p className="p-sx" style={{ fontSize: "16px" }}>
+                      <span className="flaticon-check" /> Una semana de uso
+                      gratuito.
+                    </p>
+                  </li>
+                  <li>
+                    <p className="p-sx" style={{ fontSize: "16px" }}>
+                      <span className="flaticon-check" /> Personal de Ethhar
+                      para realizar intervenciones musicales.
+                    </p>
+                    <p className="p-sx" style={{ fontSize: "15px" }}>
+                      • Cuidadores: capacitar en las presentaciones de Ethhar y
+                      sus funcionalidades.
+                    </p>
+                    <p className="p-sx" style={{ fontSize: "15px" }}>
+                      • Pacientes: generar confianza y empatía en la
+                      incorporación de la intervención musical
+                    </p>
+                  </li>
+                  <li>
+                    <p className="p-sx" style={{ fontSize: "16px" }}>
+                      <span className="flaticon-check" /> Kit de reproducción
+                    </p>
+                    <p className="p-sx" style={{ fontSize: "15px" }}>
+                      • Dos tablets y dos auriculares cada 10 pacientes
+                    </p>
+                  </li>
+                  <li>
+                    <p className="p-sx" style={{ fontSize: "16px" }}>
+                      <span className="flaticon-check" /> Descuento por volumen
+                      de socios
+                    </p>
+                    <p className="p-sx" style={{ fontSize: "15px" }}>
+                      • 10% con hasta 19 socios adheridos
+                    </p>
+                    <p className="p-sx" style={{ fontSize: "15px" }}>
+                      • 20% a partir de 20 socios adheridos
                     </p>
                   </li>
                 </ul>

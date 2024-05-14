@@ -47,25 +47,25 @@ const ContactForm = ({ color }) => {
                 <div className="contacto-form-button-box">
                   <button
                     type="button"
-                    onClick={() => handlePlanSelection("Dorico")}
+                    onClick={() => handlePlanSelection("Individual")}
                     className={`btn btn-sm btn-tra-grey tra-${color}-hover contacto-form-button ${
                       formData.plan === "Dorico"
                         ? "contacto-btn-input-selected"
                         : ""
                     }`}
                   >
-                    Dórico
+                    Individual
                   </button>
                   <button
                     type="button"
-                    onClick={() => handlePlanSelection("Lidio")}
+                    onClick={() => handlePlanSelection("Clinicas")}
                     className={`btn btn-sm btn-tra-grey tra-${color}-hover contacto-form-button ${
                       formData.plan === "Lidio"
                         ? "contacto-btn-input-selected"
                         : ""
                     }`}
                   >
-                    Lidio
+                    Clínicas
                   </button>
                 </div>
                 <label htmlFor="mode" className="contacto-form-label mt-3">

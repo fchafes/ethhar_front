@@ -8,7 +8,7 @@ const Demo1content5 = () => {
       <div className="container">
         <div
           className="content-5-wrapper"
-          style={{ paddingTop: "1em", paddingBottom: 0, backgroundColor: "#1c3163" }}
+          style={{ paddingTop: "1.5em", paddingBottom: "1.5em", backgroundColor: "#1c3163" }}
         >
           <div className="row d-flex align-items-center">
             {/* TEXT BLOCK */}
@@ -149,11 +149,11 @@ const Demo1content5 = () => {
             <div className="col-md-5 col-lg-6">
               <div
                 className="img-block right-column wow fadeInLeft"
-                style={{ visibility: "visible", animationName: "fadeInLeft" }}
+                style={{ visibility: "visible", animationName: "fadeInLeft", marginTop: "50px" }}
               >
                 <img
                   className="img-fluid"
-                  src="/images/features_img.webp"
+                  src="supa/features_pic.webp"
                   alt="content-image"
                 />
               </div>

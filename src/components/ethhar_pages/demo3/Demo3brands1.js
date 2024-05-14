@@ -34,7 +34,7 @@ const Demo3brands1 = () => {
     ],
   };
   return (
-    <div id="brands-1" className="wide-100 brands-section division" style={{ paddingTop: "0", paddingBottom: "100px" }}>
+    <div id="brands-1" className="wide-100 brands-section division" style={{ paddingTop: "0", paddingBottom: "50px" }}>
       <div className="container">
         <div className="row">
           <div className="col text-center">
