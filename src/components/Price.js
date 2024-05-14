@@ -21,7 +21,7 @@ const Price = ({ color }) => {
               {/* Title */}
               <h2
                 className="h2-md"
-                style={{ fontSize: "2.3em", fontWeight: "500" }}
+                style={{ fontSize: "2.3em", fontWeight: "700" }}
               >
                 Comienza a conectar con tus recuerdos
               </h2>
