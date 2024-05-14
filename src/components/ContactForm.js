@@ -49,7 +49,7 @@ const ContactForm = ({ color }) => {
                     type="button"
                     onClick={() => handlePlanSelection("Individual")}
                     className={`btn btn-sm btn-tra-grey tra-${color}-hover contacto-form-button ${
-                      formData.plan === "Dorico"
+                      formData.plan === "Individual"
                         ? "contacto-btn-input-selected"
                         : ""
                     }`}
@@ -60,7 +60,7 @@ const ContactForm = ({ color }) => {
                     type="button"
                     onClick={() => handlePlanSelection("Clinicas")}
                     className={`btn btn-sm btn-tra-grey tra-${color}-hover contacto-form-button ${
-                      formData.plan === "Lidio"
+                      formData.plan === "Clinicas"
                         ? "contacto-btn-input-selected"
                         : ""
                     }`}
