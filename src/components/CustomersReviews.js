@@ -57,7 +57,10 @@ const CustomersReviews = () => {
                       <div className="col-md-6 col-lg-6">
                         <div className="txt-block left-column wow fadeInRight">
                           {/* Title */}
-                          <h2 className="h2-xs" style={{ fontSize: "2.8rem" }}>
+                          <h2
+                            className="h2-xs"
+                            style={{ fontSize: "2.4rem", fontWeight: "700" }}
+                          >
                             La música ha sido reconocida como una herramienta
                             vital para el bienestar.
                           </h2>
@@ -98,7 +101,10 @@ const CustomersReviews = () => {
                       <div className="col-md-6 col-lg-6">
                         <div className="txt-block left-column wow fadeInRight">
                           {/* Title */}
-                          <h2 className="h2-xs" style={{ fontSize: "2.8rem" }}>
+                          <h2
+                            className="h2-xs"
+                            style={{ fontSize: "2.4rem", fontWeight: "700" }}
+                          >
                             El Alzheimer y la resiliencia de la Memoria.
                           </h2>
                           {/* Text */}
@@ -138,7 +144,10 @@ const CustomersReviews = () => {
                       <div className="col-md-6 col-lg-6">
                         <div className="txt-block left-column wow fadeInRight">
                           {/* Title */}
-                          <h2 className="h2-xs" style={{ fontSize: "2.8rem" }}>
+                          <h2
+                            className="h2-xs"
+                            style={{ fontSize: "2.4rem", fontWeight: "700" }}
+                          >
                             Transformando desafíos en oportunidades.
                           </h2>
                           {/* Text */}

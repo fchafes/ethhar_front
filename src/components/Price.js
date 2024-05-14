@@ -19,7 +19,10 @@ const Price = ({ color }) => {
           <div className="col-lg-10 col-xl-8">
             <div className="section-title title-01 mb-80">
               {/* Title */}
-              <h2 className="h2-md" style={{ fontSize: "2.5em" }}>
+              <h2
+                className="h2-md"
+                style={{ fontSize: "2.3em", fontWeight: "500" }}
+              >
                 Comienza a conectar con tus recuerdos
               </h2>
               {/* Text */}

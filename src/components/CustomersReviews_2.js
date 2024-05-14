@@ -39,7 +39,7 @@ const CustomersReviews_2 = () => {
           <div className="col-lg-10 col-xl-8">
             <div className="section-title title-01 mb-70">
               {/* Title */}
-              <h3 className="h3-md">Conoce nuestro equipo de trabajo</h3>
+              <h3 className="h3-md" style={{ fontSize: "2.3em", fontWeight: "700" }}>Conoce nuestro equipo de trabajo</h3>
             </div>
           </div>
         </div>

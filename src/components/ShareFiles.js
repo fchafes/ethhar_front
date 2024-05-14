@@ -33,7 +33,7 @@ const ShareFiles = ({ flexible }) => {
           <div className="col-md-7 col-lg-6">
             <div className="txt-block right-column wow fadeInLeft">
               {/* Title */}
-              <h2 className="h2-xs" style={{ fontSize: "2.2rem" }}>
+              <h2 className="h2-xs" style={{ fontSize: "2.2rem", fontWeight: "700" }}>
                 {" "}
                 Porque siempre hay una canción detrás de cada recuerdo.
               </h2>

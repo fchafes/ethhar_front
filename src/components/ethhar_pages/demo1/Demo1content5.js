@@ -8,13 +8,21 @@ const Demo1content5 = () => {
       <div className="container">
         <div
           className="content-5-wrapper"
-          style={{ paddingTop: "1.5em", paddingBottom: "1.5em", backgroundColor: "#1c3163" }}
+          style={{
+            paddingTop: "1.5em",
+            paddingBottom: "1.5em",
+            backgroundColor: "#1c3163",
+          }}
         >
           <div className="row d-flex align-items-center">
             {/* TEXT BLOCK */}
             <div
               className="col-md-7 col-lg-6"
-              style={{ height: "600px", overflow: "scroll", overflowX: "hidden" }}
+              style={{
+                height: "600px",
+                overflow: "scroll",
+                overflowX: "hidden",
+              }}
               id="vertical-scroll-bar"
             >
               <div className="txt-block left-column wow fadeInRight">
@@ -32,7 +40,7 @@ const Demo1content5 = () => {
                   </div>
                   {/* Text */}
                   <div className="cbox-txt">
-                    <h5 className="h5-md">
+                    <h5 className="h5-md" style={{ fontWeight: "700" }}>
                       Música que se ajusta a cada situación
                     </h5>
                     <p className="p-lg">
@@ -57,7 +65,7 @@ const Demo1content5 = () => {
                   </div>
                   {/* Text */}
                   <div className="cbox-txt">
-                    <h5 className="h5-md">
+                    <h5 className="h5-md" style={{ fontWeight: "700" }}>
                       Listas de reproducción actualizadas diariamente
                     </h5>
                     <p className="p-lg">
@@ -77,7 +85,7 @@ const Demo1content5 = () => {
                   </div>
                   {/* Text */}
                   <div className="cbox-txt">
-                    <h5 className="h5-md">
+                    <h5 className="h5-md" style={{ fontWeight: "700" }}>
                       Eliminación de canciones no deseadas
                     </h5>
                     <p className="p-lg">
@@ -97,7 +105,7 @@ const Demo1content5 = () => {
                   </div>
                   {/* Text */}
                   <div className="cbox-txt">
-                    <h5 className="h5-md">
+                    <h5 className="h5-md" style={{ fontWeight: "700" }}>
                       Perfiles individuales vinculados a cada usuario
                     </h5>
                     <p className="p-lg">
@@ -112,12 +120,14 @@ const Demo1content5 = () => {
                   {/* Icon */}
                   <div className="cbox-ico">
                     <div className="white-color ico-45">
-                      <span className="flaticon-line-graph"/>
+                      <span className="flaticon-line-graph" />
                     </div>
                   </div>
                   {/* Text */}
                   <div className="cbox-txt">
-                    <h5 className="h5-md">Test Tempau Semanal</h5>
+                    <h5 className="h5-md" style={{ fontWeight: "700" }}>
+                      Test Tempau Semanal
+                    </h5>
                     <p className="p-lg">
                       Realización del test en la App lo cual permite realizar un
                       seguimiento de los resultados con envío semanal al
@@ -135,7 +145,9 @@ const Demo1content5 = () => {
                   </div>
                   {/* Text */}
                   <div className="cbox-txt">
-                    <h5 className="h5-md">Reporte Semanal del uso de la App</h5>
+                    <h5 className="h5-md" style={{ fontWeight: "700" }}>
+                      Reporte Semanal del uso de la App
+                    </h5>
                     <p className="p-lg">
                       Un seguimiento preciso del uso de la aplicación, con
                       informe semanal al profesional o responsable a cargo.
@@ -149,7 +161,11 @@ const Demo1content5 = () => {
             <div className="col-md-5 col-lg-6">
               <div
                 className="img-block right-column wow fadeInLeft"
-                style={{ visibility: "visible", animationName: "fadeInLeft", marginTop: "50px" }}
+                style={{
+                  visibility: "visible",
+                  animationName: "fadeInLeft",
+                  marginTop: "50px",
+                }}
               >
                 <img
                   className="img-fluid"

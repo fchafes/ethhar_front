@@ -9,7 +9,7 @@ const Demo1features2 = () => {
         <div className="row justify-content-center">
           <div className="col-md-10 col-lg-10">
             <div className="section-title title-02 mb-60">
-              <h2 className="h2-xs" style={{ fontSize: "2.8rem" }}>
+              <h2 className="h2-xs" style={{ fontSize: "2.4rem", fontWeight: "700" }}>
                 Múltiples beneficios con sólo unos clicks
               </h2>
             </div>
