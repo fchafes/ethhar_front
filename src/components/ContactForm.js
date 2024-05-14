@@ -1,6 +1,8 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import emailjs from "@emailjs/browser";
 
 const ContactForm = ({ color }) => {
+  useEffect(() => emailjs.init("qzCc73L_w8BAzxzI3"), []);
   const [formData, setFormData] = useState({
     plan: "",
     mode: "",
@@ -14,12 +16,45 @@ const ContactForm = ({ color }) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
-  const handleSubmit = (e) => {
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  //   console.log(formData);
+  //   setFormData({ plan: "", mode: "", name: "", email: "", message: "" });
+  //   setFormularioEnviado(true);
+  // };
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log(formData);
-    setFormData({ plan: "", mode: "", name: "", email: "", message: "" });
-    setFormularioEnviado(true);
+
+    try {
+      const formDataToSend = {
+        plan: formData.plan,
+        mode: formData.mode,
+        name: formData.name,
+        email: formData.email,
+        message: formData.message,
+      };
+
+      await emailjs.send(
+        "service_e4vh7m6", // Reemplaza con tu ID de servicio de EmailJS
+        "template_rx0uj6u", // Reemplaza con tu ID de template de EmailJS
+        formDataToSend
+        // "YOUR_USER_ID" // Reemplaza con tu ID de usuario de EmailJS
+      );
+
+      setFormularioEnviado(true);
+      setFormData({
+        plan: "",
+        mode: "",
+        name: "",
+        email: "",
+        message: "",
+      });
+    } catch (error) {
+      console.error("Error al enviar el formulario:", error);
+    }
   };
+
   const handlePlanSelection = (plan) => {
     setFormData({ ...formData, plan });
   };
@@ -39,7 +74,9 @@ const ContactForm = ({ color }) => {
           {/* TEXT BLOCK */}
           <div className="col-md-7 col-lg-5">
             <div className="txt-block right-column wow fadeInLeft">
-              <form onSubmit={handleSubmit}>
+              <form onSubmit={handleSubmit} method="POST">
+                <input type="hidden" name="plan" value={formData.plan} />
+                <input type="hidden" name="mode" value={formData.mode} />
                 {/* Title */}
                 <label htmlFor="plan" className="contacto-form-label">
                   Estoy interesado/a en el plan:
@@ -85,9 +122,9 @@ const ContactForm = ({ color }) => {
                   </button>
                   <button
                     type="button"
-                    onClick={() => handleModeSelection("6_meses")}
+                    onClick={() => handleModeSelection("Semestral")}
                     className={`btn btn-sm btn-tra-grey tra-${color}-hover contacto-form-button ${
-                      formData.mode === "6_meses"
+                      formData.mode === "Semestral"
                         ? "contacto-btn-input-selected"
                         : ""
                     }`}
@@ -145,7 +182,7 @@ const ContactForm = ({ color }) => {
                 </div>
                 <div>
                   {formularioEnviado ? (
-                    <div>Mensaje enviado</div>
+                    <div>¡Mensaje enviado! Nos pondremos en contacto a la brevedad.</div>
                   ) : (
                     <button
                       type="submit"
