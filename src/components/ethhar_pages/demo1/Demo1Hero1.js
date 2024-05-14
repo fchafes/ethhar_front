@@ -14,7 +14,10 @@ const Demo1Hero1 = ({ onReproducirVideo }) => {
           <div className="col-md-7 col-lg-6">
             <div className="hero-1-txt white-color wow fadeInRight">
               {/* Title */}
-              <h2 className="h2-md" style={{ fontSize: "2.8rem" }}>
+              <h2
+                className="h2-md"
+                style={{ fontSize: "2.6rem", fontWeight: "700" }}
+              >
                 Los recuerdos se olvidan,
                 <br /> la música no.
               </h2>
@@ -39,7 +42,11 @@ const Demo1Hero1 = ({ onReproducirVideo }) => {
           {/* HERO IMAGE */}
           <div
             className="col-md-5 col-lg-6"
-            style={{ display: "flex", justifyContent: "flex-end", marginLeft: "-50px" }}
+            style={{
+              display: "flex",
+              justifyContent: "flex-end",
+              marginLeft: "-50px",
+            }}
           >
             <div className="hero-1-img wow fadeInLeft" style={{ width: "75%" }}>
               <img
