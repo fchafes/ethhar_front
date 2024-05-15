@@ -4311,7 +4311,7 @@
   }
 
   .wsmobileheader {
-    height: 80px;
+    /* height: 80px; */
     box-shadow: 0 0 2px rgba(50, 50, 50, 0.4);
   }
   .tra-menu .wsmobileheader,
@@ -4557,13 +4557,17 @@
   }
   .wsmobileheader .smllogo {
     display: block;
-    margin-top: 19px;
+    margin-top: 0px !important;
     padding-left: 22px;
+    padding-top: 11px;
+    /* padding-bottom: 10px; */
+
   }
   .smllogo img {
     width: auto;
     max-width: inherit;
     max-height: 40px;
+    width: 170px !important;
   }
 
   .wsmenu > .wsmenu-list > li > ul.sub-menu,
@@ -10123,8 +10127,8 @@
   }
 
   .wsanimated-arrow {
-    padding: 14px 30px 14px 0px;
-    margin: 25px 18px 0 0;
+    padding: 14px 30px 0px 0px;
+    margin: 10px 18px 0 0;
   }
 
   .wsmobileheader .smllogo {
