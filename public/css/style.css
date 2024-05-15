@@ -14,19 +14,87 @@ CUSTOM
 ============================ */
 
 @media screen and (max-width: 768px) {
-.hero-1-custom-resp {
-  margin-top: 30px !important;
-}
-.h3-custom-resp {
-  font-size: 1.2em;
-  margin-top: 0;
-}
-.share-resp-custom {
-  padding-top: 50px !important;
-}
-.custom-mobile-hero-img {
-  margin-left: -20px !important;
-}
+  .hero-1-custom-resp {
+    margin-top: 20px !important;
+    padding-bottom: 0px !important;
+  }
+  .h3-custom-resp {
+    font-size: 1.1em;
+    /* margin-top: 0 !important; */
+  }
+  .share-resp-custom {
+    padding-top: 50px !important;
+  }
+  .custom-mobile-hero-img {
+    margin-left: -20px !important;
+  }
+  .custom-mobile-vid-sec {
+    margin-top: 120px !important;
+  }
+  .custom-mobile-title {
+    font-size: 1.5em !important;
+  }
+  .custom-reviews-mobile {
+    padding-top: 0 !important;
+  }
+  .custom-demo1-fea2-mobile {
+    padding-top: 30px !important;
+  }
+  .custom-demo1-content5-mobile {
+    padding-top: 0 !important;
+  }
+  .text-block-custom-mobile {
+    height: auto !important;
+    overflow: auto !important;
+  }
+  .testimonios-custom-mobile {
+    padding-top: 50px !important;
+  }
+  .cus-reviews-custom-mobile {
+    padding-top: 30px !important;
+    padding-bottom: 80px !important;
+  }
+  .review-44 {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  .custom-mobile-title-big {
+    font-size: 1.5em !important;
+  }
+  .custom-button-mobile {
+    padding: 10px 10px !important;
+  }
+  .custom-ul-price-mobile {
+    text-align: start;
+  }
+  .custom-price-mobile {
+    padding-bottom: 20px !important;
+  }
+  .contact-custom-mobile {
+    padding-top: 50px !important;
+  }
+  .contact-custom-col-mobile {
+    padding: 0 5% !important;
+  }
+  .footer-logo-custom-mobile {
+    width: 100px !important;
+  }
+  .custom-footer-info-mobile {
+    display: inline-block !important;
+  }
+  .footer-links-custom-mobile a {
+    font-size: 0.9em;
+  }
+  .footer-links-custom-mobile p {
+    margin-bottom: 0 !important;
+  }
+  .footer-custom-mobile {
+    padding-top: 0px !important;
+  }
+  .footer-logo-col-custom-mobile {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .gradiente {
@@ -85,12 +153,10 @@ CUSTOM
   );
 }
 
-
 .video-promo-custom {
   width: 100%;
   border-radius: 20px;
 }
-
 
 .hero-custom-gradient-cont {
   width: 100%;
@@ -510,7 +576,7 @@ body {
   margin-right: 30px;
 }
 .mr-25 {
-  margin-right: 25px;
+  margin-right: 15px;
 }
 .mr-20 {
   margin-right: 20px;

@@ -30,7 +30,7 @@ const Demo1content9 = ({ reproducir }) => {
         <div className="row justify-content-center">
           <div className="col-md-10 col-lg-9">
             <div
-              className="section-title title-02 mb-60"
+              className="section-title title-02 mb-60 custom-mobile-vid-sec"
               style={{ marginTop: "150px" }}
             >
               <h3 className="h2-xs h3-custom-resp">

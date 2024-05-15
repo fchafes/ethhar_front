@@ -2,7 +2,7 @@ const Demo1content5 = () => {
   return (
     <section
       id="content-5"
-      className="content-5 ws-wrapper content-section division"
+      className="content-5 ws-wrapper content-section division custom-demo1-content5-mobile"
       style={{ paddingTop: "100px" }}
     >
       <div className="container">
@@ -17,7 +17,7 @@ const Demo1content5 = () => {
           <div className="row d-flex align-items-center">
             {/* TEXT BLOCK */}
             <div
-              className="col-md-7 col-lg-6"
+              className="col-md-7 col-lg-6 text-block-custom-mobile"
               style={{
                 height: "600px",
                 overflow: "scroll",

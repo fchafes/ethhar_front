@@ -9,7 +9,7 @@ const Price = ({ color }) => {
   return (
     <section
       id="pricing-2"
-      className="bg-whitesmoke wide-60 pricing-section division"
+      className="bg-whitesmoke wide-60 pricing-section division custom-price-mobile"
       style={{ paddingBottom: "100px", color: "#1d293f", position: "relative" }}
     >
       <div className="gradiente-price"></div>
@@ -20,7 +20,7 @@ const Price = ({ color }) => {
             <div className="section-title title-01 mb-80">
               {/* Title */}
               <h2
-                className="h2-md"
+                className="h2-md custom-mobile-title"
                 style={{ fontSize: "2.3em", fontWeight: "700" }}
               >
                 Comienza a conectar con tus recuerdos
@@ -31,6 +31,7 @@ const Price = ({ color }) => {
               </p>
 
               <div
+              className="price-plan-custom"
                 style={{
                   display: "flex",
                   justifyContent: "center",
@@ -40,7 +41,7 @@ const Price = ({ color }) => {
                 <button
                   className={`${
                     plan === "a" ? "focus-plan" : "non-focus-plan"
-                  }`}
+                  } custom-button-mobile`}
                   onClick={() => handlePlan("a")}
                 >
                   Mensual
@@ -48,7 +49,7 @@ const Price = ({ color }) => {
                 <button
                   className={`${
                     plan === "b" ? "focus-plan" : "non-focus-plan"
-                  }`}
+                  } custom-button-mobile`}
                   onClick={() => handlePlan("b")}
                 >
                   6 meses
@@ -56,7 +57,7 @@ const Price = ({ color }) => {
                 <button
                   className={`${
                     plan === "c" ? "focus-plan" : "non-focus-plan"
-                  }`}
+                  } custom-button-mobile`}
                   onClick={() => handlePlan("c")}
                 >
                   Anual
@@ -102,7 +103,7 @@ const Price = ({ color }) => {
                   {/* <p className="p-md">Billed as $96 per year</p> */}
                 </div>
                 {/* Plan Features  */}
-                <ul className="features">
+                <ul className="features custom-ul-price-mobile">
                   <li>
                     <p className="p-md">
                       <span className="flaticon-check" /> Acceso a Playlist
@@ -160,7 +161,7 @@ const Price = ({ color }) => {
                   {/* <p className="p-md">Billed as $96 per year</p> */}
                 </div>
                 {/* Plan Features  */}
-                <ul className="features">
+                <ul className="features custom-ul-price-mobile">
                   <li>
                     <p className="p-sx" style={{ fontSize: "15px" }}>
                       Los items de plan Individual más:

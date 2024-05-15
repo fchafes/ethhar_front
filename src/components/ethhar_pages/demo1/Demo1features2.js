@@ -2,14 +2,14 @@ const Demo1features2 = () => {
   return (
     <section
       id="features-2"
-      className="wide-60 features-section division"
+      className="wide-60 features-section division custom-demo1-fea2-mobile"
       style={{ paddingTop: "100px" }}
     >
       <div className="container">
         <div className="row justify-content-center">
           <div className="col-md-10 col-lg-10">
             <div className="section-title title-02 mb-60">
-              <h2 className="h2-xs" style={{ fontSize: "2.4rem", fontWeight: "700" }}>
+              <h2 className="h2-xs custom-mobile-title" style={{ fontSize: "2.4rem", fontWeight: "700" }}>
                 Múltiples beneficios con sólo unos clicks
               </h2>
             </div>

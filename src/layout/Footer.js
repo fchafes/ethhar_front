@@ -1,15 +1,15 @@
 const Footer = () => {
   return (
-    <footer id="footer-1" className="footer division">
+    <footer id="footer-1" className="footer division footer-custom-mobile">
       <div className="container">
         <div
           className="row"
           style={{ display: "flex", justifyContent: "space-between" }}
         >
-          <div className="col-lg-4">
-            <div className="footer-info">
+          <div className="col-lg-4 col-sm-6 footer-logo-col-custom-mobile">
+            <div className="footer-info custom-footer-info-mobile">
               <img
-                className="mb-25"
+                className="mb-25 footer-logo-custom-mobile"
                 src="/supa/logo_footer.png"
                 alt="footer-logo"
                 style={{ width: "200px" }}
@@ -19,7 +19,7 @@ const Footer = () => {
           <div className="col-sm-6 col-md-3 col-lg-2">
             <div className="footer-links mb-40">
               <ul
-                className="foo-links text-secondary clearfix"
+                className="foo-links text-secondary clearfix footer-links-custom-mobile"
                 style={{ textAlign: "end" }}
               >
                 <li>

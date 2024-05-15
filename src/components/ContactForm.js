@@ -65,14 +65,14 @@ const ContactForm = ({ color }) => {
   return (
     <section
       id="contact-form"
-      className="content-2 wide-60 content-section division"
+      className="content-2 wide-60 content-section division contact-custom-mobile"
       style={{ position: "relative", overflow: "visible" }}
     >
       <div className="gradiente-contact"></div>
       <div className="container">
         <div className="row d-flex align-items-center">
           {/* TEXT BLOCK */}
-          <div className="col-md-7 col-lg-5">
+          <div className="col-md-7 col-lg-5 contact-custom-col-mobile">
             <div className="txt-block right-column wow fadeInLeft">
               <form onSubmit={handleSubmit} method="POST">
                 <input type="hidden" name="plan" value={formData.plan} />

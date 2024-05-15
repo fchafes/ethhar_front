@@ -2,7 +2,7 @@ const Testimonios = () => {
   return (
     <section
       id="testimonios"
-      className="content-5 ws-wrapper content-section division"
+      className="content-5 ws-wrapper content-section division testimonios-custom-mobile"
       style={{ paddingTop: "100px" }}
     >
       <div
