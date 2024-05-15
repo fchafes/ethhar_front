@@ -4,7 +4,7 @@ const Demo1Hero1 = ({ onReproducirVideo }) => {
   return (
     <section
       id="hero-1"
-      className="bg-scroll hero-section division pb-4"
+      className="bg-scroll hero-section division pb-4 hero-1-custom-resp"
       style={{ paddingTop: "100px", overflow: "visible" }}
     >
       <div className="gradiente"></div>

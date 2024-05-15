@@ -13,6 +13,19 @@
 CUSTOM
 ============================ */
 
+@media screen and (max-width: 768px) {
+.hero-1-custom-resp {
+  margin-top: 50px !important;
+}
+.h3-custom-resp {
+  font-size: 1.2em;
+  margin-top: 0;
+}
+.share-resp-custom {
+  padding-top: 50px !important;
+}
+}
+
 .gradiente {
   position: absolute;
   top: 0;

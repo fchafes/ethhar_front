@@ -2,7 +2,7 @@ const ShareFiles = ({ flexible }) => {
   return (
     <section
       id="content-2"
-      className="content-2 wide-60 content-section division"
+      className="content-2 wide-60 content-section division share-resp-custom"
       style={{
         overflow: "visible",
         position: "relative",

@@ -33,7 +33,7 @@ const Demo1content9 = ({ reproducir }) => {
               className="section-title title-02 mb-60"
               style={{ marginTop: "150px" }}
             >
-              <h3 className="h2-xs">
+              <h3 className="h2-xs h3-custom-resp">
                 Intervenciones musicales personalizadas enfocadas en personas de
                 tercera edad, principalmente en aquellas diagnosticadas con
                 enfermedades neurodegenerativas, como el Alzheimer.
