@@ -24,6 +24,9 @@ CUSTOM
 .share-resp-custom {
   padding-top: 50px !important;
 }
+.custom-mobile-hero-img {
+  margin-left: -20px !important;
+}
 }
 
 .gradiente {
@@ -3907,7 +3910,7 @@ p.terms-txt a,
 /*------------------------------------------*/
 
 .tra-menu.navbar-light .scroll .wsmenu > .wsmenu-list > li a {
-  color: #fff !important;
+  color: #666 !important;
 }
 
 .tra-menu.navbar-light.dark-scroll .scroll .wsmenu > .wsmenu-list > li a,

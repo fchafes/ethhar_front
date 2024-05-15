@@ -11,7 +11,7 @@ const Demo1Hero1 = ({ onReproducirVideo }) => {
       <div className="container">
         <div className="row d-flex align-items-center">
           {/* HERO TEXT */}
-          <div className="col-md-7 col-lg-6">
+          <div className="col-md-7 col-lg-6 order-2">
             <div className="hero-1-txt white-color wow fadeInRight">
               {/* Title */}
               <h2
@@ -41,7 +41,7 @@ const Demo1Hero1 = ({ onReproducirVideo }) => {
           {/* END HERO TEXT */}
           {/* HERO IMAGE */}
           <div
-            className="col-md-5 col-lg-6"
+            className="col-md-5 col-lg-6 order-1 custom-mobile-hero-img"
             style={{
               display: "flex",
               justifyContent: "flex-end",

@@ -4561,7 +4561,6 @@
     padding-left: 22px;
     padding-top: 11px;
     /* padding-bottom: 10px; */
-
   }
   .smllogo img {
     width: auto;
@@ -4612,6 +4611,7 @@
     padding-top: 80px;
     padding-bottom: 0;
     margin-bottom: 50px;
+    padding-top: 50px !important;
   }
   .hero-1-txt {
     text-align: center;
@@ -4619,6 +4619,8 @@
   }
   .hero-1-txt h2 {
     margin-bottom: 20px;
+    margin-top: 55px;
+    font-size: 28px !important;
   }
   .hero-1-txt p.p-xl {
     padding-right: 0;
@@ -4627,6 +4629,7 @@
   .hero-1-img {
     margin-left: 0;
     margin-bottom: -50px;
+    width: 90% !important;
   }
 
   /* Hero-2 */
