@@ -95,6 +95,15 @@ CUSTOM
     display: flex;
     align-items: center;
   }
+  .tra-menu.navbar-light .scroll .wsmenu > .wsmenu-list > li a {
+    color: #666 !important;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .tra-menu.navbar-light .scroll .wsmenu > .wsmenu-list > li a {
+    color: #fff !important;
+  }
 }
 
 .gradiente {
@@ -3975,9 +3984,9 @@ p.terms-txt a,
 /*  Navigation Menu
 /*------------------------------------------*/
 
-.tra-menu.navbar-light .scroll .wsmenu > .wsmenu-list > li a {
-  color: #666 !important;
-}
+/* .tra-menu.navbar-light .scroll .wsmenu > .wsmenu-list > li a {
+  color: #fff !important;
+} */
 
 .tra-menu.navbar-light.dark-scroll .scroll .wsmenu > .wsmenu-list > li a,
 .tra-menu.navbar-dark.dark-scroll .scroll .wsmenu > .wsmenu-list > li a {

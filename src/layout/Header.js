@@ -36,7 +36,9 @@ const Header = ({
           style={{ backgroundColor: "transparent" }}
         >
           <span className="smllogo">
-            <img src="/supa/logo_iso.png" alt="mobile-logo" />
+            <a href="#">
+              <img src="/supa/logo_iso.png" alt="mobile-logo" />
+            </a>
           </span>
           <a
             id="wsnavtoggle"
@@ -51,7 +53,7 @@ const Header = ({
           <div className="wsmainwp clearfix">
             {/* HEADER LOGO */}
             <div className="desktoplogo">
-              <a href="#hero-1" className="logo-black">
+              <a href="/" className="logo-black">
                 <img
                   src="/supa/logo_iso.png"
                   alt="header-logo"
@@ -60,7 +62,7 @@ const Header = ({
               </a>
             </div>
             <div className="desktoplogo">
-              <a href="#hero-1" className="logo-white">
+              <a href="/" className="logo-white">
                 <img
                   src="/supa/logo_iso.png"
                   alt="header-logo"
