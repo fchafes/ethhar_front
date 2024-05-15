@@ -1,5 +1,6 @@
 import { Html, Head, Main, NextScript } from "next/document";
 import emailjs from "@emailjs/browser";
+import GoogleAnalytics from "@/src/components/GoogleAnalytics";
 
 export default function Document() {
   return (
@@ -17,6 +18,7 @@ export default function Document() {
           )()
         </script>
       </Head>
+      <GoogleAnalytics />
       <body>
         <Main />
         <NextScript />
