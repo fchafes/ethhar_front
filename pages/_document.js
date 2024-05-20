@@ -13,7 +13,7 @@ export default function Document() {
         <script type="text/javascript">
           (function()
           {emailjs.init({
-            publicKey: "qzCc73L_w8BAzxzI3",
+            publicKey: `${process.env.EMAILJS_PUBLIC_KEY}`,
           })}
           )()
         </script>
