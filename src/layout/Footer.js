@@ -92,12 +92,22 @@ const Footer = () => {
                   </li>
                   <li>
                     <p>
-                      <a href="#">Facebook</a>
+                      <a
+                        href="https://www.facebook.com/profile.php?id=100086571590317"
+                        target="_blank"
+                      >
+                        Facebook
+                      </a>
                     </p>
                   </li>
                   <li className="last-li">
                     <p>
-                      <a href="#">Instagram</a>
+                      <a
+                        href="https://www.instagram.com/ethhar_/"
+                        target="_blank"
+                      >
+                        Instagram
+                      </a>
                     </p>
                   </li>
                 </ul>
