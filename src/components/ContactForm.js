@@ -1,8 +1,6 @@
-import { useState, useEffect } from "react";
-import emailjs from "@emailjs/browser";
+import { useState } from "react";
 
 const ContactForm = ({ color }) => {
-  useEffect(() => emailjs.init("qzCc73L_w8BAzxzI3"), []);
   const [formData, setFormData] = useState({
     plan: "",
     mode: "",
@@ -11,47 +9,42 @@ const ContactForm = ({ color }) => {
     message: "",
   });
   const [formularioEnviado, setFormularioEnviado] = useState(false);
+  const [enviando, setEnviando] = useState(false);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
-  // const handleSubmit = (e) => {
-  //   e.preventDefault();
-  //   console.log(formData);
-  //   setFormData({ plan: "", mode: "", name: "", email: "", message: "" });
-  //   setFormularioEnviado(true);
-  // };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setEnviando(true);
 
     try {
-      const formDataToSend = {
-        plan: formData.plan,
-        mode: formData.mode,
-        name: formData.name,
-        email: formData.email,
-        message: formData.message,
-      };
-
-      await emailjs.send(
-        "service_e4vh7m6", // Reemplaza con tu ID de servicio de EmailJS
-        "template_rx0uj6u", // Reemplaza con tu ID de template de EmailJS
-        formDataToSend
-        // "YOUR_USER_ID" // Reemplaza con tu ID de usuario de EmailJS
-      );
-
-      setFormularioEnviado(true);
-      setFormData({
-        plan: "",
-        mode: "",
-        name: "",
-        email: "",
-        message: "",
+      const res = await fetch("/api/send-email", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
       });
+
+      if (res.status === 200) {
+        setFormularioEnviado(true);
+        setFormData({
+          plan: "",
+          mode: "",
+          name: "",
+          email: "",
+          message: "",
+        });
+      } else {
+        console.error("Error al enviar el formulario:", await res.json());
+      }
     } catch (error) {
       console.error("Error al enviar el formulario:", error);
+    } finally {
+      setEnviando(false);
     }
   };
 
@@ -182,7 +175,11 @@ const ContactForm = ({ color }) => {
                 </div>
                 <div>
                   {formularioEnviado ? (
-                    <div>¡Mensaje enviado! Nos pondremos en contacto a la brevedad.</div>
+                    <div>
+                      ¡Mensaje enviado! Nos pondremos en contacto a la brevedad.
+                    </div>
+                  ) : enviando ? (
+                    <div>Enviando...</div>
                   ) : (
                     <button
                       type="submit"
