@@ -1,14 +1,16 @@
-import Script from 'next/script';
+import Script from "next/script";
+import dotenv from "dotenv";
+dotenv.config();
 
 const GoogleAnalytics = () => {
   return (
     <>
       <Script
-        strategy='lazyOnload'
+        strategy="lazyOnload"
         src={`https://www.googletagmanager.com/gtag/js?id=${process.env.MEASUREMENT_ID}`}
       />
 
-      <Script id='' strategy='lazyOnload'>
+      <Script id="" strategy="lazyOnload">
         {`
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
