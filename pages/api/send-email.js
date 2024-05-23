@@ -4,22 +4,27 @@ export default async function handler(req, res) {
   if (req.method === "POST") {
     const { plan, mode, name, email, message } = req.body;
 
-    // Configura el transportador de Nodemailer
+    // Configuracion del transportador de Nodemailer
     const transporter = nodemailer.createTransport({
-      service: "gmail",
-      auth: {
-        user: process.env.EMAIL_USER,
-        pass: process.env.EMAIL_PASS,
-      },
-    });
-
-    // Configura las opciones del correo
-    const mailOptions = {
-      from: process.env.EMAIL_USER,
-      to: process.env.EMAIL_USER,
-      subject: `Formulario de contacto, mensaje de ${name}`,
-      text: `Interes en el Plan: ${plan}\nEn Modo: ${mode}\nNombre del consultante: ${name}\nEmail del consultante: ${email}\nMensaje adicional: ${message}`,
-    };
+        host: process.env.SMTP_HOST,
+        port: process.env.SMTP_PORT, 
+        secure: true, // True para puerto 465, false para otros puertos
+        auth: {
+          user: process.env.SMTP_USER,
+          pass: process.env.SMTP_PASS,
+        },
+        tls: {
+          rejectUnauthorized: false
+        }
+      });
+  
+      // Configuracion de opciones del correo
+      const mailOptions = {
+        from: process.env.SMTP_USER,
+        to: process.env.SMTP_USER,
+        subject: `Formulario de contacto, mensaje de ${name}`,
+        text: `Interes en el Plan: ${plan}\nEn Modo: ${mode}\nNombre del consultante: ${name}\nEmail del consultante: ${email}\nMensaje adicional: ${message}`,
+      };
 
     try {
       await transporter.sendMail(mailOptions);
