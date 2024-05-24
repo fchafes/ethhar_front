@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Script from "next/script";
 import { useEffect, useState } from "react";
 import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
@@ -6,6 +7,7 @@ import "../public/demo/css/style.css";
 import VideoState from "../src/context/video";
 import PreLoader from "../src/layout/PreLoader";
 import "../styles/globals.css";
+// import GoogleAnalytics from "@/src/components/GoogleAnalytics";
 
 function MyApp({ Component, pageProps }) {
   const [preloader, setPreloader] = useState(true);
@@ -27,6 +29,19 @@ function MyApp({ Component, pageProps }) {
         />
       </Head>
       {preloader && <PreLoader />}
+      {/* <GoogleAnalytics /> */}
+      <Script
+        strategy="afterInteractive"
+        src={`https://www.googletagmanager.com/gtag/js?id=${process.env.MEASUREMENT_ID}`}
+      />
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', '${process.env.MEASUREMENT_ID}');
+    `}
+      </Script>
       <Component {...pageProps} />
     </VideoState>
   );

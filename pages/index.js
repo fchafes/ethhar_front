@@ -18,6 +18,8 @@ const Index = () => {
     setReproducirVideo(true);
   };
 
+  console.log("ANALYTICS ID", process.env.MEASUREMENT_ID);
+
   return (
     <Layout navLight getStartText navHoverColor="nav-orange-red-hover">
       <HeroHeader onReproducirVideo={handleReproducirVideo} />
