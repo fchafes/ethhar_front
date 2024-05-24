@@ -83,13 +83,13 @@ const Footer = () => {
               </div>
               <div className="col">
                 <ul className="bottom-footer-list text-secondary text-end">
-                  <li className="first-li">
+                  {/* <li className="first-li">
                     <p>
                       <a href="#" onClick={toggleModal}>
                         Términos y condiciones
                       </a>
                     </p>
-                  </li>
+                  </li> */}
                   <li>
                     <p>
                       <a
@@ -116,7 +116,7 @@ const Footer = () => {
           </div>
         </div>
       </footer>
-      {termsModal && <TermsModal toggleModal={toggleModal} />}
+      {/* {termsModal && <TermsModal toggleModal={toggleModal} />} */}
     </>
   );
 };
