@@ -100,6 +100,9 @@ const Pricing = ({ color }) => {
                     <span className="dark-color">975</span>
                   )}
                   <sup className="validity dark-color">/ UYU por mes</sup>
+                  <p style={{ fontSize: "0.9em", color: "#777777" }}>
+                    *Los precios no incluyen impuestos.
+                  </p>
                   {/* <p className="p-md">Billed as $96 per year</p> */}
                 </div>
                 {/* Plan Features  */}
@@ -158,7 +161,9 @@ const Pricing = ({ color }) => {
                   <sup className="validity dark-color">
                     / UYU por mes por usuario
                   </sup>
-                  {/* <p className="p-md">Billed as $96 per year</p> */}
+                  <p style={{ fontSize: "0.9em", color: "#777777" }}>
+                    *Los precios no incluyen impuestos.
+                  </p>
                 </div>
                 {/* Plan Features  */}
                 <ul className="features custom-ul-price-mobile">
