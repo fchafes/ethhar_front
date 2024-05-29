@@ -89,23 +89,18 @@ const Header = ({
                 {/* SIMPLE NAVIGATION LINK */}
                 <li className="nl-simple">
                   <a href="#reviews-1">Beneficios</a>
-                  {/* <Link href="/#reviews-1">Beneficios</Link> */}
                 </li>
                 {/* SIMPLE NAVIGATION LINK */}
                 <li className="nl-simple">
-                  {/* <Link href="#faqs-2">Cómo funciona</Link> */}
                   <a href="#content-5">Cómo funciona</a>
                 </li>
                 {/* SIMPLE NAVIGATION LINK */}
                 <li className="nl-simple">
-                  {/* <Link href={`${singlePage ? "/features" : "#features-8"}`}>
-                    Quiénes somos
-                  </Link> */}
+                  
                   <a href="#equipo">Quiénes somos</a>
                 </li>
                 {/* SIMPLE NAVIGATION LINK */}
                 <li className="nl-simple">
-                  {/* <Link href="/pricing">Planes</Link> */}
                   <a href="#pricing-2">Planes</a>
                 </li>
                 {/* HEADER BUTTON */}

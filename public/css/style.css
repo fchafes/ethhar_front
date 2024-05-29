@@ -297,6 +297,10 @@ CUSTOM
   align-content: center;
 }
 
+#button-nav-important {
+  line-height: 0 !important;
+}
+
 #button-nav-important:hover {
   background-color: #fff;
   color: #1d293f !important;
