@@ -73,15 +73,15 @@ const Footer = () => {
           <hr style={{ marginTop: 0 }} />
           <div className="bottom-footer">
             <div className="row row-cols-1 row-cols-md-2 d-flex align-items-center">
-              <div className="col">
+              <div className="col-md-5">
                 <div className="footer-copyright">
                   <p>
                     © 2023 - {new Date().getFullYear()} ETHHAR. Todos los
-                    derechos reservados
+                    derechos reservados.
                   </p>
                 </div>
               </div>
-              <div className="col">
+              <div className="col-md-7">
                 <ul className="bottom-footer-list text-secondary text-end">
                   {/* <li className="first-li">
                     <p>
@@ -90,6 +90,16 @@ const Footer = () => {
                       </a>
                     </p>
                   </li> */}
+                  <li>
+                    <p>Cel: (+598) 094 011 010</p>
+                  </li>
+                  <li>
+                    <p>
+                      <a href="mailto: info@ethhar.com.uy">
+                        info@ethhar.com.uy
+                      </a>
+                    </p>
+                  </li>
                   <li>
                     <p>
                       <a
