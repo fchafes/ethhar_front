@@ -34,7 +34,11 @@ const LogoMarquee = () => {
     ],
   };
   return (
-    <div id="brands-1" className="wide-100 brands-section division" style={{ paddingTop: "0", paddingBottom: "50px" }}>
+    <div
+      id="brands-1"
+      className="wide-100 brands-section division"
+      style={{ paddingTop: "0", paddingBottom: "50px" }}
+    >
       <div className="container">
         <div className="row">
           <div className="col text-center">
@@ -70,6 +74,18 @@ const LogoMarquee = () => {
                   className="img-fluid"
                   src="supa/apoyo/logos04.png"
                   alt="brand-logo"
+                />
+              </div>
+              {/* Brand Logo Image 10*/}
+              <div className="brand-logo">
+                <img
+                  className="img-fluid"
+                  src="supa/apoyo/logos11.png"
+                  alt="brand-logo"
+                  style={{
+                    width: "90px",
+                    marginLeft: "30px",
+                  }}
                 />
               </div>
               {/* Brand Logo Image 5*/}
