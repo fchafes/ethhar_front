@@ -91,15 +91,15 @@ const Pricing = ({ color }) => {
                   {/* Price */}
                   <sup className="dark-color">$</sup>
                   {plan === "a" ? (
-                    <span className="dark-color">24.50</span>
+                    <span className="dark-color">975</span>
                   ) : plan === "b" ? (
-                    <span className="dark-color">21.50</span>
+                    <span className="dark-color">878</span>
                   ) : plan === "c" ? (
-                    <span className="dark-color">19.50</span>
+                    <span className="dark-color">790</span>
                   ) : (
-                    <span className="dark-color">24.50</span>
+                    <span className="dark-color">975</span>
                   )}
-                  <sup className="validity dark-color">/ USD por mes</sup>
+                  <sup className="validity dark-color">/ UYU por mes</sup>
                   <p style={{ fontSize: "0.9em", color: "#777777" }}>
                     *Los precios no incluyen impuestos.
                   </p>
@@ -150,16 +150,16 @@ const Pricing = ({ color }) => {
                   {/* Price */}
                   <sup className="dark-color">$</sup>
                   {plan === "a" ? (
-                    <span className="dark-color">19.50</span>
+                    <span className="dark-color">790</span>
                   ) : plan === "b" ? (
-                    <span className="dark-color">19.50</span>
+                    <span className="dark-color">790</span>
                   ) : plan === "c" ? (
-                    <span className="dark-color">18.50</span>
+                    <span className="dark-color">750</span>
                   ) : (
-                    <span className="dark-color">18.50</span>
+                    <span className="dark-color">790</span>
                   )}
                   <sup className="validity dark-color">
-                    / USD por mes por usuario
+                    / UYU por mes por usuario
                   </sup>
                   <p style={{ fontSize: "0.9em", color: "#777777" }}>
                     *Los precios no incluyen impuestos.
