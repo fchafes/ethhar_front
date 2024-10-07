@@ -89,7 +89,7 @@ const Pricing = ({ color }) => {
                     <p className="p-md">Para uso personal</p>
                   </div>
                   {/* Price */}
-                  <sup className="dark-color">$</sup>
+                  <sup className="dark-color">USD</sup>
                   {plan === "a" ? (
                     <span className="dark-color">24.50</span>
                   ) : plan === "b" ? (
@@ -99,7 +99,16 @@ const Pricing = ({ color }) => {
                   ) : (
                     <span className="dark-color">24.50</span>
                   )}
-                  <sup className="validity dark-color">/ USD por mes</sup>
+                  <sup
+                    className="validity dark-color"
+                    style={{
+                      display: "block",
+                      marginTop: "0.5em",
+                      marginBottom: "1.5em",
+                    }}
+                  >
+                    por mes
+                  </sup>
                   <p style={{ fontSize: "0.9em", color: "#777777" }}>
                     *Los precios no incluyen impuestos.
                   </p>
@@ -148,7 +157,7 @@ const Pricing = ({ color }) => {
                     <p className="p-md">Para uso en instituciones</p>
                   </div>
                   {/* Price */}
-                  <sup className="dark-color">$</sup>
+                  <sup className="dark-color">USD</sup>
                   {plan === "a" ? (
                     <span className="dark-color">19.50</span>
                   ) : plan === "b" ? (
@@ -158,8 +167,15 @@ const Pricing = ({ color }) => {
                   ) : (
                     <span className="dark-color">19.50</span>
                   )}
-                  <sup className="validity dark-color">
-                    / USD por mes por usuario
+                  <sup
+                    className="validity dark-color"
+                    style={{
+                      display: "block",
+                      marginTop: "0.5em",
+                      marginBottom: "1.5em",
+                    }}
+                  >
+                    por mes, por usuario
                   </sup>
                   <p style={{ fontSize: "0.9em", color: "#777777" }}>
                     *Los precios no incluyen impuestos.
