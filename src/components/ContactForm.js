@@ -97,6 +97,17 @@ const ContactForm = ({ color }) => {
                   >
                     Clínicas
                   </button>
+                  <button
+                    type="button"
+                    onClick={() => handlePlanSelection("Talleres")}
+                    className={`btn btn-sm btn-tra-grey tra-${color}-hover contacto-form-button ${
+                      formData.plan === "Talleres"
+                        ? "contacto-btn-input-selected"
+                        : ""
+                    }`}
+                  >
+                    Talleres
+                  </button>
                 </div>
                 <label htmlFor="mode" className="contacto-form-label mt-3">
                   En la modalidad de contratación:

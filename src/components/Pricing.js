@@ -91,13 +91,13 @@ const Pricing = ({ color }) => {
                   {/* Price */}
                   <sup className="dark-color">USD</sup>
                   {plan === "a" ? (
-                    <span className="dark-color">24.50</span>
+                    <span className="dark-color">15.00</span>
                   ) : plan === "b" ? (
-                    <span className="dark-color">21.50</span>
+                    <span className="dark-color">14.00</span>
                   ) : plan === "c" ? (
-                    <span className="dark-color">19.50</span>
+                    <span className="dark-color">12.50</span>
                   ) : (
-                    <span className="dark-color">24.50</span>
+                    <span className="dark-color">15.00</span>
                   )}
                   <sup
                     className="validity dark-color"
@@ -119,19 +119,19 @@ const Pricing = ({ color }) => {
                   <li>
                     <p className="p-md">
                       <span className="flaticon-check" /> Acceso a Playlist
-                      personalizadas
+                      personalizadas.
                     </p>
                   </li>
                   <li>
                     <p className="p-md">
                       <span className="flaticon-check" /> Opciones para:
-                      Ansiedad, reminiscencia y depresión
+                      Memoria, Calma y Energía.
                     </p>
                   </li>
                 </ul>
                 {/* Pricing Plan Button */}
                 <a
-                  href="#contact-form"
+                  href="/signup"
                   className={`btn btn-sm btn-tra-grey tra-${color}-hover`}
                   style={{ backgroundColor: "#032886", color: "#fff" }}
                 >
@@ -159,13 +159,13 @@ const Pricing = ({ color }) => {
                   {/* Price */}
                   <sup className="dark-color">USD</sup>
                   {plan === "a" ? (
-                    <span className="dark-color">19.50</span>
+                    <span className="dark-color">15.00</span>
                   ) : plan === "b" ? (
-                    <span className="dark-color">19.50</span>
+                    <span className="dark-color">14.00</span>
                   ) : plan === "c" ? (
-                    <span className="dark-color">18.50</span>
+                    <span className="dark-color">12.50</span>
                   ) : (
-                    <span className="dark-color">19.50</span>
+                    <span className="dark-color">15.00</span>
                   )}
                   <sup
                     className="validity dark-color"
@@ -184,20 +184,21 @@ const Pricing = ({ color }) => {
                 {/* Plan Features  */}
                 <ul className="features custom-ul-price-mobile">
                   <li>
-                    <p className="p-sx" style={{ fontSize: "15px" }}>
-                      Los items de plan Individual más:
+                    <p className="p-sx" style={{ fontSize: "16px" }}>
+                      <span className="flaticon-check" /> Acceso a Playlist
+                      personalizadas.
                     </p>
                   </li>
                   <li>
                     <p className="p-sx" style={{ fontSize: "16px" }}>
-                      <span className="flaticon-check" /> Una semana de uso
-                      gratuito.
+                      <span className="flaticon-check" /> Opciones para: calma,
+                      memoria y energía.
                     </p>
                   </li>
                   <li>
                     <p className="p-sx" style={{ fontSize: "16px" }}>
-                      <span className="flaticon-check" /> Personal de Ethhar
-                      para realizar intervenciones musicales.
+                      <span className="flaticon-check" /> Personal de Ethhar por
+                      dos semanas para realizar intervenciones musicales:
                     </p>
                     <p className="p-sx" style={{ fontSize: "15px" }}>
                       • Cuidadores: capacitar en las presentaciones de Ethhar y
@@ -205,27 +206,72 @@ const Pricing = ({ color }) => {
                     </p>
                     <p className="p-sx" style={{ fontSize: "15px" }}>
                       • Pacientes: generar confianza y empatía en la
-                      incorporación de la intervención musical
-                    </p>
-                  </li>
-                  <li>
-                    <p className="p-sx" style={{ fontSize: "16px" }}>
-                      <span className="flaticon-check" /> Kit de reproducción
-                    </p>
-                    <p className="p-sx" style={{ fontSize: "15px" }}>
-                      • Dos tablets y dos auriculares cada 10 pacientes
+                      incorporación de la intervención musical.
                     </p>
                   </li>
                   <li>
                     <p className="p-sx" style={{ fontSize: "16px" }}>
                       <span className="flaticon-check" /> Descuento por volumen
-                      de socios
+                      de socios:
                     </p>
                     <p className="p-sx" style={{ fontSize: "15px" }}>
-                      • 10% con hasta 19 socios adheridos
+                      • 10% por más de 15 socios adheridos
+                    </p>
+                  </li>
+                </ul>
+                {/* Pricing Plan Button */}
+                <a
+                  href="#contact-form"
+                  className={`btn btn-sm btn-tra-grey tra-${color}-hover`}
+                  style={{ backgroundColor: "#032886", color: "#fff" }}
+                >
+                  Contratar este plan
+                </a>
+              </div>
+            </div>
+            {/* END BASIC PLAN */}
+            {/* BASIC PLAN */}
+            <div className="col">
+              <div
+                className="pricing-2-table mb-40 wow fadeInUp"
+                style={{ backgroundColor: "#ececec" }}
+              >
+                {/* Plan Price */}
+                <div className="pricing-plan">
+                  {/* Plan Title */}
+                  <div className="pricing-plan-title">
+                    <h5 className="h5-xs" style={{ color: "#1d293f" }}>
+                      Talleres
+                    </h5>
+                    <p className="p-md">Para uso en instituciones</p>
+                  </div>
+                  {/* Price */}
+                  <span className="dark-color" style={{ fontSize: "2em" }}>
+                    Consultar precio
+                  </span>
+                </div>
+                {/* Plan Features  */}
+                <ul className="features custom-ul-price-mobile">
+                  <li>
+                    <p className="p-sx" style={{ fontSize: "16px" }}>
+                      <span className="flaticon-check" /> Talleres de música con
+                      el uso de la aplicación de dos horas para los residentes
+                      de cada residencial, una vez por semana, dividida en dos
+                      instancias:
                     </p>
                     <p className="p-sx" style={{ fontSize: "15px" }}>
-                      • 20% a partir de 20 socios adheridos
+                      • Taller grupal de una hora de duración.
+                    </p>
+                    <p className="p-sx" style={{ fontSize: "15px" }}>
+                      • Una hora de secciones individuales de 20 minutos, con
+                      seis residentes.
+                    </p>
+                  </li>
+                  <li>
+                    <p className="p-sx" style={{ fontSize: "16px" }}>
+                      <span className="flaticon-check" /> Acceso a playlists
+                      personalizadas con opciones de Memoria, Calma y Energía
+                      para todos los residentes del residencial.
                     </p>
                   </li>
                 </ul>
