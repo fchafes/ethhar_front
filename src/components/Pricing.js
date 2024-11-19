@@ -131,7 +131,7 @@ const Pricing = ({ color }) => {
                 </ul>
                 {/* Pricing Plan Button */}
                 <a
-                  href="/signup"
+                  href="#contact-form"
                   className={`btn btn-sm btn-tra-grey tra-${color}-hover`}
                   style={{ backgroundColor: "#032886", color: "#fff" }}
                 >
