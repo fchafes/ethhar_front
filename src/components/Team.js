@@ -39,7 +39,12 @@ const Team = () => {
           <div className="col-lg-10 col-xl-8">
             <div className="section-title title-01 mb-70">
               {/* Title */}
-              <h3 className="h3-md custom-mobile-title" style={{ fontSize: "2.3em", fontWeight: "700" }}>Conoce nuestro equipo de trabajo</h3>
+              <h3
+                className="h3-md custom-mobile-title"
+                style={{ fontSize: "2.3em", fontWeight: "700" }}
+              >
+                Conoce nuestro equipo de trabajo
+              </h3>
             </div>
           </div>
         </div>
@@ -67,7 +72,7 @@ const Team = () => {
                         {/* Testimonial Avatar */}
                         <div className="review-avatar">
                           <img
-                            src="supa/equipo_1.jpg"
+                            src="ethhar_images/equipo/Daniel-Fondo-Azul.jpg"
                             alt="review-avatar"
                           />
                         </div>
@@ -129,12 +134,12 @@ const Team = () => {
                         style={{ marginTop: 0, marginBottom: "1em" }}
                       >
                         {/* Testimonial Avatar */}
-                        {/* <div className="review-avatar">
+                        <div className="review-avatar">
                           <img
-                            src="/images/review-author-1.jpg"
+                            src="ethhar_images/equipo/Damian-Fondo-Azul.jpg"
                             alt="review-avatar"
                           />
-                        </div> */}
+                        </div>
                         {/* Testimonial Author */}
                         <div className="review-author">
                           <h6 className="h6-xl" style={{ color: "#1d293f" }}>
@@ -193,7 +198,7 @@ const Team = () => {
                         {/* Testimonial Avatar */}
                         <div className="review-avatar">
                           <img
-                            src="supa/equipo_3.jpg"
+                            src="ethhar_images/equipo/Ventura-Fondo-Azul.jpg"
                             alt="review-avatar"
                           />
                         </div>
@@ -256,7 +261,10 @@ const Team = () => {
                       >
                         {/* Testimonial Avatar */}
                         <div className="review-avatar">
-                          <img src="supa/equipo_4.jpg" alt="review-avatar" />
+                          <img
+                            src="ethhar_images/equipo/Fernando-Fondo-Azul.jpg"
+                            alt="review-avatar"
+                          />
                         </div>
                         {/* Testimonial Author */}
                         <div className="review-author">
@@ -270,7 +278,7 @@ const Team = () => {
                         style={{ marginRight: "-20px" }}
                       >
                         <img
-                          src="supa/arg_flag.jpg"
+                          src="ethhar_images/arg_flag.jpg"
                           alt="review-avatar"
                           style={{
                             width: "30px",
@@ -314,12 +322,12 @@ const Team = () => {
                         style={{ marginTop: 0, marginBottom: "1em" }}
                       >
                         {/* Testimonial Avatar */}
-                        {/* <div className="review-avatar">
+                        <div className="review-avatar">
                           <img
-                            src="/images/review-author-1.jpg"
+                            src="ethhar_images/equipo/Viviana-Fondo-Azul.jpg"
                             alt="review-avatar"
                           />
-                        </div> */}
+                        </div>
                         {/* Testimonial Author */}
                         <div className="review-author">
                           <h6 className="h6-xl" style={{ color: "#1d293f" }}>
@@ -333,7 +341,7 @@ const Team = () => {
                         style={{ marginRight: "-20px" }}
                       >
                         <img
-                          src="supa/arg_flag.jpg"
+                          src="ethhar_images/arg_flag.jpg"
                           alt="review-avatar"
                           style={{
                             width: "30px",
@@ -377,7 +385,10 @@ const Team = () => {
                       >
                         {/* Testimonial Avatar */}
                         <div className="review-avatar">
-                          <img src="supa/equipo_6.jpg" alt="review-avatar" />
+                          <img
+                            src="ethhar_images/equipo_6.jpg"
+                            alt="review-avatar"
+                          />
                         </div>
                         {/* Testimonial Author */}
                         <div className="review-author">
@@ -392,7 +403,7 @@ const Team = () => {
                         style={{ marginRight: "-20px" }}
                       >
                         <img
-                          src="supa/spain_flag.jpg"
+                          src="ethhar_images/spain_flag.jpg"
                           alt="review-avatar"
                           style={{
                             width: "30px",
@@ -440,7 +451,7 @@ const Team = () => {
                         {/* Testimonial Avatar */}
                         <div className="review-avatar">
                           <img
-                            src="supa/equipo_7.jpg"
+                            src="ethhar_images/equipo_7.jpg"
                             alt="review-avatar"
                           />
                         </div>
@@ -457,7 +468,7 @@ const Team = () => {
                         style={{ marginRight: "-20px" }}
                       >
                         <img
-                          src="supa/spain_flag.jpg"
+                          src="ethhar_images/spain_flag.jpg"
                           alt="review-avatar"
                           style={{
                             width: "30px",
@@ -468,7 +479,10 @@ const Team = () => {
                         />
                       </div>
                     </div>
-                    <p className="p-sx" style={{ marginBottom: 0, fontSize: "15px" }}>
+                    <p
+                      className="p-sx"
+                      style={{ marginBottom: 0, fontSize: "15px" }}
+                    >
                       Profesora y directora del Programa de Musicoterapia de la
                       Universidad de Barcelona desde 2002. Psicóloga y profesora
                       titulada de piano. También es directora y musicoterapeuta

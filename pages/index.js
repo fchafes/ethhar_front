@@ -11,6 +11,7 @@ import Team from "@/src/components/Team";
 import Pricing from "@/src/components/Pricing";
 import ContactForm from "@/src/components/ContactForm";
 import { useState } from "react";
+import WhatsApp from "@/src/components/WhatsApp";
 
 const Index = () => {
   const [reproducirVideo, setReproducirVideo] = useState(false);
@@ -35,6 +36,7 @@ const Index = () => {
       <Pricing />
       <hr className="divider" />
       <ContactForm />
+      <WhatsApp />
     </Layout>
   );
 };

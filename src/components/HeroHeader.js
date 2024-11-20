@@ -18,8 +18,7 @@ const HeroHeader = ({ onReproducirVideo }) => {
                 className="h2-md"
                 style={{ fontSize: "2.6rem", fontWeight: "700" }}
               >
-                Los recuerdos se olvidan,
-                <br /> la música no.
+                Cada vida tiene su propia lista de reproducción.
               </h2>
               {/* Text */}
               <p className="p-xl">

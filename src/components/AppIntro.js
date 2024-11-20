@@ -44,15 +44,15 @@ const AppIntro = ({ flexible }) => {
               <p className="p-sx">
                 Reconstruimos recuerdos autobiográficos a través de la{" "}
                 <strong>escucha de música personalizada</strong>, logrando
-                mejoras en aspectos de
+                mejoras en aspectos de{" "}
                 <strong>memoria, cognitivos, emocionales y conductuales</strong>
                 .
               </p>
               {/* Text */}
               <p className="p-sx">
-                Una solución alternativa,{" "}
-                <strong>no invasiva, no farmacológica</strong> y personalizada,
-                enfocada en apoyar y potenciar las actividades cotidianas,{" "}
+                Una solución alternativa, <strong>no invasiva</strong> y
+                personalizada, enfocada en apoyar y potenciar las actividades
+                cotidianas,{" "}
                 <strong>
                   facilitando las tareas de familiares y cuidadores
                 </strong>
