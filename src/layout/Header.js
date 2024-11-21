@@ -37,7 +37,7 @@ const Header = ({
         >
           <span className="smllogo">
             <a href="#">
-              <img src="/supa/logo_iso.png" alt="mobile-logo" />
+              <img src="/ethhar_images/logo_iso.png" alt="mobile-logo" />
             </a>
           </span>
           <a
@@ -55,7 +55,7 @@ const Header = ({
             <div className="desktoplogo">
               <a href="/" className="logo-black">
                 <img
-                  src="/supa/logo_iso.png"
+                  src="/ethhar_images/logo_iso.png"
                   alt="header-logo"
                   style={{ width: "190px" }}
                 />
@@ -64,7 +64,7 @@ const Header = ({
             <div className="desktoplogo">
               <a href="/" className="logo-white">
                 <img
-                  src="/supa/logo_iso.png"
+                  src="/ethhar_images/logo_iso.png"
                   alt="header-logo"
                   style={{ width: "190px" }}
                 />
@@ -72,7 +72,7 @@ const Header = ({
             </div>
             <div className="desktoplogo">
               <img
-                src="/supa/logo_bajada.png"
+                src="/ethhar_images/logo_bajada.png"
                 alt="header-logo"
                 style={{ height: "35px", marginLeft: "10px" }}
               />
@@ -86,22 +86,55 @@ const Header = ({
                   navHoverColor ? navHoverColor : "nav-skyblue-hover"
                 }`}
               >
-                {/* SIMPLE NAVIGATION LINK */}
-                <li className="nl-simple">
-                  <a href="#reviews-1">Beneficios</a>
+                {/* DROPDOWN MENU */}
+                <li>
+                  <span
+                    className={`wsmenu-click  ${
+                      mobileMenuToggle === "about" ? "ws-activearrow" : ""
+                    }`}
+                    onClick={() => toggleMenu("about")}
+                  >
+                    <i className="wsmenu-arrow" />
+                  </span>
+                  <Link href="#">
+                    App {!singlePage && <span className="wsarrow" />}
+                  </Link>
+                  {!singlePage && (
+                    <ul
+                      className="sub-menu"
+                      style={{
+                        display: mobileMenuToggle === "about" ? "block" : "",
+                      }}
+                    >
+                      <li>
+                        <a href="#beneficios" className="submenu-custom-link">
+                          Beneficios
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#features" className="submenu-custom-link">
+                          Cómo funciona
+                        </a>
+                      </li>
+                    </ul>
+                  )}
                 </li>
+                {/* DROPDOWN MENU */}
                 {/* SIMPLE NAVIGATION LINK */}
                 <li className="nl-simple">
-                  <a href="#content-5">Cómo funciona</a>
-                </li>
-                {/* SIMPLE NAVIGATION LINK */}
-                <li className="nl-simple">
-                  
-                  <a href="#equipo">Quiénes somos</a>
+                  <a href="#equipo">Equipo</a>
                 </li>
                 {/* SIMPLE NAVIGATION LINK */}
                 <li className="nl-simple">
                   <a href="#pricing-2">Planes</a>
+                </li>
+                {/* SIMPLE NAVIGATION LINK */}
+                <li className="nl-simple">
+                  <a href="/investigacion">Investigacion</a>
+                </li>
+                {/* SIMPLE NAVIGATION LINK */}
+                <li className="nl-simple">
+                  <a href="/prensa">Prensa</a>
                 </li>
                 {/* HEADER BUTTON */}
                 <li className="nl-simple">
