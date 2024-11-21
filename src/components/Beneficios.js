@@ -36,7 +36,7 @@ const Beneficios = () => {
   };
   return (
     <section
-      id="reviews-1"
+      id="beneficios"
       className="wide-100 reviews-section division slickmargin custom-reviews-mobile"
       style={{ paddingTop: "100px" }}
     >

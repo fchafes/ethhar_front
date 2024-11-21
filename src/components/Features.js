@@ -1,7 +1,7 @@
 const Features = () => {
   return (
     <section
-      id="content-5"
+      id="features"
       className="content-5 ws-wrapper content-section division custom-demo1-content5-mobile"
       style={{ paddingTop: "100px" }}
     >
@@ -169,7 +169,7 @@ const Features = () => {
               >
                 <img
                   className="img-fluid"
-                  src="supa/features_pic.webp"
+                  src="ethhar_images/features_pic.webp"
                   alt="content-image"
                 />
               </div>
