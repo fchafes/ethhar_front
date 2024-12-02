@@ -86,12 +86,9 @@ const LogoMarqueeInves = () => {
               </div>
               
             </Slider>
-            {/* End Brands Carousel */}
           </div>
         </div>
-        {/* End row */}
       </div>
-      {/* End container */}
     </div>
   );
 };

@@ -2,17 +2,18 @@ import { createClient } from "../src/prismicio";
 import LayoutPrensa from "../src/layout/LayoutPrensa";
 import PostPrensa from "@/src/components/prensa/PostPrensa";
 
+// PRISMIC CMS
 export async function getStaticProps() {
   const client = createClient();
 
-  // Obtén los artículos de prensa desde Prismic
+  // articulos de prensa
   const articulosPrensa = await client.getAllByType("articulo_prensa");
 
-  // Ordena los artículos por el campo `orden` definido por el cliente
+  // ordeno artículos por campo `orden`
   const articulosOrdenados = articulosPrensa.sort((a, b) => {
-    const ordenA = parseInt(a.data.orden || 1000, 10); // Default a 1000 si no tiene valor
+    const ordenA = parseInt(a.data.orden || 1000, 10); // default a 1000 si no tiene valor (ultimo en la lista)
     const ordenB = parseInt(b.data.orden || 1000, 10);
-    return ordenA - ordenB; // Orden ascendente
+    return ordenA - ordenB; // orden ascendente
   });
 
   return {
@@ -22,6 +23,7 @@ export async function getStaticProps() {
     revalidate: 10,
   };
 }
+// END PRISMIC CMS
 
 const Prensa = ({ articulos }) => {
   return (
@@ -55,7 +57,7 @@ const Prensa = ({ articulos }) => {
             </h2>
           </div>
 
-          {/* Map de los artículos ordenados */}
+          {/* map de los artículos ordenados */}
           {articulos.map((articulo) => {
             const { medio, fecha, titulo, descripcion, link, imagen, video } =
               articulo.data;

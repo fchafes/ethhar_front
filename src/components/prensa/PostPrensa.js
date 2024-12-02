@@ -7,7 +7,7 @@ const PostPrensa = ({
   imagen,
   video,
 }) => {
-  // Función para formatear la fecha
+  // funcion para formatear la fecha
   const formatearFecha = (fecha) => {
     const date = new Date(fecha);
     const dia = String(date.getDate()).padStart(2, "0");
@@ -17,16 +17,16 @@ const PostPrensa = ({
     return `${dia}/${mes}/${año}`;
   };
 
-  // Función para convertir una URL corta de YouTube en la URL embebida
+  // funcion para convertir una URL corta de YouTube en la URL embebida
   const obtenerUrlEmbedYoutube = (url) => {
-    // Verifica si la URL es de YouTube corta (https://youtu.be/{video_id})
+    // verifica si la URL es de YouTube corta (https://youtu.be/{video_id})
     const regex = /https:\/\/youtu\.be\/([a-zA-Z0-9_-]+)/;
     const match = url.match(regex);
     if (match) {
       const videoId = match[1];
       return `https://www.youtube.com/embed/${videoId}`;
     }
-    // Si no es una URL corta, devolverla tal cual (se asume que ya está en formato embed)
+    // si no es una URL corta, devolverla tal cual (se asume que ya está en formato embed)
     return url;
   };
 
@@ -85,7 +85,7 @@ const PostPrensa = ({
             </a>
           </div>
 
-          {/* Contenedor para la imagen o el video */}
+          {/* contenedor para la imagen o el video */}
           <div
             style={{
               backgroundColor: "white",
@@ -98,9 +98,9 @@ const PostPrensa = ({
             }}
             className="post-prensa-img"
           >
-            {/* Verificar si hay video o imagen */}
+            {/* verificar si hay video o imagen */}
             {video && video.embed_url ? (
-              // Si hay un video, lo mostramos con un iframe
+              // si hay un video, lo mostramos con un iframe
               <div
                 style={{
                   width: "100%",
@@ -111,7 +111,7 @@ const PostPrensa = ({
                 }}
               >
                 <iframe
-                  src={obtenerUrlEmbedYoutube(video.embed_url)} // Usamos la función para convertir la URL
+                  src={obtenerUrlEmbedYoutube(video.embed_url)} // uso la función para convertir la URL
                   width="100%"
                   height="100%"
                   frameBorder="0"
@@ -121,7 +121,7 @@ const PostPrensa = ({
                 ></iframe>
               </div>
             ) : imagen ? (
-              // Si hay una imagen, la mostramos normalmente
+              // si hay una imagen, la mostramos normalmente
               <img
                 src={imagen}
                 alt={titulo}
@@ -134,7 +134,7 @@ const PostPrensa = ({
                 }}
               />
             ) : (
-              // Si no hay ni imagen ni video, mostramos un mensaje alternativo
+              // si no hay ni imagen ni video, mostramos un mensaje alternativo
               <p>No hay contenido multimedia disponible</p>
             )}
           </div>

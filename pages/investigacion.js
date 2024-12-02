@@ -9,13 +9,13 @@ import { createClient } from "../src/prismicio";
 export async function getStaticProps() {
   const client = createClient();
 
-  // Obtén los artículos de "articulo_inves"
+  // articulos de "articulo_inves"
   const articulos = await client.getAllByType("articulo_inves");
 
-  // Obtén los congresos de "congresos"
+  // articulos de "congresos"
   const congresos = await client.getAllByType("congreso");
 
-  // Ordena los congresos por fecha descendente
+  // ordeno los congresos por fecha descendente
   const congresosOrdenados = congresos.sort(
     (a, b) => new Date(b.data.fecha) - new Date(a.data.fecha)
   );
@@ -99,7 +99,7 @@ const Investigacion = ({ articulos, congresos }) => {
             </h2>
           </div>
 
-          {/* Mapeo de artículos_inves */}
+          {/* mapeo de artículos_inves */}
           {articulos.map((articulo) => {
             const { autor, ano, titulo, descripcion, link_al_articulo } =
               articulo.data;

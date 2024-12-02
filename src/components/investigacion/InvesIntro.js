@@ -64,9 +64,7 @@ const InvesIntro = () => {
           </div>
           {/* END TEXT BLOCK */}
         </div>
-        {/* End row */}
       </div>
-      {/* End container */}
     </section>
   );
 };

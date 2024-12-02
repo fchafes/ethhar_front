@@ -3,11 +3,6 @@ import { useRef, useEffect } from "react";
 const BigVideo = ({ reproducir }) => {
   const videoRef = useRef(null);
   const iframeRef = useRef(null);
-  // useEffect(() => {
-  //   if (reproducir) {
-  //     videoRef.current.play();
-  //   }
-  // }, [reproducir]);
   useEffect(() => {
     if (reproducir && iframeRef.current) {
       const srcWithAutoplay = iframeRef.current.src + "&autoplay=1";
@@ -22,17 +17,6 @@ const BigVideo = ({ reproducir }) => {
     >
       <div className="container white-color">
         {/* IMAGE BLOCK */}
-        {/* <div className="row">
-          <div className="col">
-            <div className="content-9-img video-preview wow fadeInUp">
-              <video ref={videoRef} controls poster="/supa/video-promo-poster.jpg" className="video-promo-custom">
-                <source src="supa/comprimido.mp4" type="video/mp4" />
-                Tu navegador no soporta la reproducción de video.
-              </video>
-            </div>
-          </div>
-        </div> */}
-
         <div className="row">
           <div className="col">
             <div
