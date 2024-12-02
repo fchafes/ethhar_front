@@ -24,8 +24,8 @@ export async function getStaticProps() {
     props: {
       articulos,
       congresos: congresosOrdenados,
-      revalidate: 10,
     },
+    revalidate: 10,
   };
 }
 // END PRISMIC CMS

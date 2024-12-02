@@ -18,8 +18,8 @@ export async function getStaticProps() {
   return {
     props: {
       articulos: articulosOrdenados,
-      revalidate: 10, // Pasamos los artículos ordenados
     },
+    revalidate: 10,
   };
 }
 
