@@ -109,8 +109,8 @@ const Team = () => {
                       relación entre la música y el cerebro en la facultad de
                       Ciencias, en los laboratorios de Neurociencias (2019) y
                       talleres de Neurociencia (Instituto Clemente Estable).
-                      Presenta en 2024 su tesis final del Máster en
-                      Musicoterapia de la UNIR.
+                      Magister en Musicoterapia, Universidad de La Rioja,
+                      España.
                     </p>
                     {/* End Testimonial Author */}
                   </div>

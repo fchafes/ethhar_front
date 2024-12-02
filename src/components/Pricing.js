@@ -5,6 +5,16 @@ const Pricing = ({ color }) => {
   const handlePlan = (plan) => {
     setPlan(plan);
   };
+  const numeroTelefono = "59894011010";
+  const msjIndividual = encodeURIComponent(
+    "¡Hola! Estoy interesado en el plan Individual."
+  );
+  const msjClinicas = encodeURIComponent(
+    "¡Hola! Estoy interesado en el plan Clínicas."
+  );
+  const msjTalleres = encodeURIComponent(
+    "¡Hola! Estoy interesado en el plan Talleres."
+  );
 
   return (
     <section
@@ -131,7 +141,8 @@ const Pricing = ({ color }) => {
                 </ul>
                 {/* Pricing Plan Button */}
                 <a
-                  href="#contact-form"
+                  href={`https://wa.me/${numeroTelefono}?text=${msjIndividual}`}
+                  target="_blank"
                   className={`btn btn-sm btn-tra-grey tra-${color}-hover`}
                   style={{ backgroundColor: "#032886", color: "#fff" }}
                 >
@@ -221,7 +232,8 @@ const Pricing = ({ color }) => {
                 </ul>
                 {/* Pricing Plan Button */}
                 <a
-                  href="#contact-form"
+                  href={`https://wa.me/${numeroTelefono}?text=${msjClinicas}`}
+                  target="_blank"
                   className={`btn btn-sm btn-tra-grey tra-${color}-hover`}
                   style={{ backgroundColor: "#032886", color: "#fff" }}
                 >
@@ -277,7 +289,8 @@ const Pricing = ({ color }) => {
                 </ul>
                 {/* Pricing Plan Button */}
                 <a
-                  href="#contact-form"
+                  href={`https://wa.me/${numeroTelefono}?text=${msjTalleres}`}
+                  target="_blank"
                   className={`btn btn-sm btn-tra-grey tra-${color}-hover`}
                   style={{ backgroundColor: "#032886", color: "#fff" }}
                 >
