@@ -170,13 +170,13 @@ const Pricing = ({ color }) => {
                   {/* Price */}
                   <sup className="dark-color">USD</sup>
                   {plan === "a" ? (
-                    <span className="dark-color">15.00</span>
+                    <span className="dark-color">17.00</span>
                   ) : plan === "b" ? (
-                    <span className="dark-color">14.00</span>
+                    <span className="dark-color">16.00</span>
                   ) : plan === "c" ? (
-                    <span className="dark-color">12.50</span>
+                    <span className="dark-color">14.50</span>
                   ) : (
-                    <span className="dark-color">15.00</span>
+                    <span className="dark-color">17.00</span>
                   )}
                   <sup
                     className="validity dark-color"
