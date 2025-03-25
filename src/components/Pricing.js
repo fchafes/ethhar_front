@@ -168,7 +168,10 @@ const Pricing = ({ color }) => {
                     <p className="p-md">Para uso en instituciones</p>
                   </div>
                   {/* Price */}
-                  <sup className="dark-color">USD</sup>
+                  <span className="dark-color" style={{ fontSize: "2em" }}>
+                    Consultar precio
+                  </span>
+                  {/* <sup className="dark-color">USD</sup>
                   {plan === "a" ? (
                     <span className="dark-color">17.00</span>
                   ) : plan === "b" ? (
@@ -190,7 +193,7 @@ const Pricing = ({ color }) => {
                   </sup>
                   <p style={{ fontSize: "0.9em", color: "#777777" }}>
                     *Los precios no incluyen impuestos.
-                  </p>
+                  </p> */}
                 </div>
                 {/* Plan Features  */}
                 <ul className="features custom-ul-price-mobile">
@@ -220,7 +223,7 @@ const Pricing = ({ color }) => {
                       incorporación de la intervención musical.
                     </p>
                   </li>
-                  <li>
+                  {/* <li>
                     <p className="p-sx" style={{ fontSize: "16px" }}>
                       <span className="flaticon-check" /> Descuento por volumen
                       de socios:
@@ -228,7 +231,7 @@ const Pricing = ({ color }) => {
                     <p className="p-sx" style={{ fontSize: "15px" }}>
                       • 10% por más de 15 socios adheridos
                     </p>
-                  </li>
+                  </li> */}
                 </ul>
                 {/* Pricing Plan Button */}
                 <a
